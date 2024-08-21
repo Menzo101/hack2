@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(./images/IMG-20240820-WA0018.jpg);
+    background-size: cover;
+}
+
+header {
+    background-color: rgb(107, 56, 178);
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    height: 70px;
+}
+
+header div {
+    color: white;
+
+}
+
+.bars {
+    display: none;
+}
+
+#show-bars {
+    display: none;
+}
+
+.ola h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: color;
+}
+
+a:hover {
+    color: midnightblue;
+
+
+}
+
+.btn-1 {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 0;
+
+    border-radius: 40px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 3rem;
+}
+
+.contact2 {
+    background-color: white;
+    padding: 2rem;
+}
+
+.contact2 h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+input {
+    margin-left: 20px;
+    height: 30px;
+    border: 1px solid mediumturquoise;
+    outline: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input:focus {
+    border: 2px solid yellow;
+}
+
+label {
+    font-size: 14px;
+    font-family: sans-serif;
+
+}
+
+button {
+    position: relative;
+    left: 100px;
+    top: 1rem;
+}
+
+
+
+
+
+
+.hero-section img {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+}
+
+.icons {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.icons i {
+    font-size: 2rem;
+}
+
+@media all and (max-width:460px) {
+    /* .btn-1 {
+      position: relative;
+      right: 10px;
+    } */
+
+    /* header {
+        padding: 1em;
+    } */
+
+    nav {
+        background-color: transparent;
+        position: fixed;
+        z-index: -1;
+        top: 5em;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0%;
+        padding: 2em 0 0 2em;
+        transform: all 0.5s ease-in-out;
+        overflow: hidden;
+    }
+
+    .hide {
+        font-size: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    /* .btn-1 {
+        padding: 4px;
+    } */
+
+    .yoyo {
+        display: none;
+    }
+
+
+    .bars {
+        display: block;
+        /* padding: 13px; */
+        border-radius: 4px;
+        position: relative;
+        right: 5px;
+        top: 5px;
+
+
+    }
+
+    header #show-bars:checked~nav {
+        background-color: orangered;
+        height: 50%;
+        cursor: pointer;
+        transition: all 2s;
+    }
+
+    nav ul li a {
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        padding: 2rem;
+    }
+
+
+
+}
+
+@media all and (max-width:790px) {
+
+    nav ul li a {
+        text-decoration: underline;
+        font-size: 17px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        padding: 2rem;
+    }
+
+    .ola h3 {
+        line-height: 1.5;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+}
+
+@media all and (max-width:687px) {
+    .yoyo {
+        display: none;
+    }
+}
+
+@media all and (min-width:800) {
+    .ola h3 {
+        color: black;
+    }
+}
